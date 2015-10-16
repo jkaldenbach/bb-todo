@@ -21,8 +21,8 @@ var TodoList = Backbone.Collection.extend({
     return this.last().get('position') + 1;
   },
 
-  getSortValue: function(todo) {
-    return todo.get('order');
+  getPosition: function(todo) {
+    return todo.get('position');
   }
 });
 
